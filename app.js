@@ -4,4 +4,5 @@ $(document).ready(function () {
     .then((reponse) => {
         console.log(reponse);
     })
+   
 });

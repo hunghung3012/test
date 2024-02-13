@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .select_tool_container {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        position: fixed;
+                        gap: 10px;
+                        top: 10px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        z-index:2;
+                    }
+                   .star_select, .content_select {
+                        border: 1px solid rgb(199, 196, 196);
+                        padding: 5px 8px;
+                        outline: none;
+                        border-radius: 10px;
+                    }
+                    .submit_button_tool {
+                        background-color: rgb(178, 220, 64);
+                        outline: none;
+                        border: none;
+                        cursor: pointer;
+                          border-radius: 10px;
+                    }
+    </style>
+</head>
+<body>
+    <div class="select_tool_container">
+    <select  class="star_select">
+        <option value="1">1⭐</option>
+        <option value="2">2⭐</option>
+        <option value="3">3⭐</option>
+        <option value="4">4⭐</option>
+        <option value="5" selected>5⭐</option>
+    </select>
+    <select class="content_select">
+        <option value="1">Tuyệt Vời</option>
+        <option value="2">Ổn Định</option>
+        <option value="3">Không có nội dung</option>
+    </select>
+    <button class="submit_button_tool">OK</button>
+</div>
+</body>
+</html>
